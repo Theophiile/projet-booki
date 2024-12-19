@@ -17,39 +17,40 @@
 
 <body>
     <div class="main-container">
-            <header>
-                <nav>
-                    <img src="./asset/logo/Booki.png" alt="logo">
-                    <div class="link">
-                        
-                        <a href="#">Hébergements</a>
-                        <a href="#">Activités</a>
-                    </div>
-                </nav>
-            </header>
-    
-            <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form action="">
-                <input type="search" placeholder="Marseille,France"/>
-                <button>Rechercher</button>
-            </form>
-            <div>
-                <h2>Filtres</h2>
-                <button>Economique</button>
-                <button>Familial</button>
-                <button>Romantique</button>
-                <button>Nos Pépites</button>
-    
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-
+        <header>
+            <a class="logo" href="#">
+                <img src="./asset/logo/Booki.png" alt="logo">
+            </a>
+            <nav>
+                <a class="hover-bar" href="#hebergements">Hébergements</a>
+                <a class="hover-bar" href="#activites">Activités</a>
+            </nav>
+        </header>
+            
         <main>
+            <section>
+                <div>
+                    <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div>
+                    <form action="">
+                        <input type="search" placeholder="Marseille,France"/>
+                        <button>Rechercher</button>
+                    </form>
+                        <h2>Filtres</h2>
+                            <button>Economique</button>
+                            <button>Familial</button>
+                            <button>Romantique</button>
+                            <button>Nos Pépites</button>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements" class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -234,10 +235,9 @@
                     </div>
                 </section>
             </div>
-                <div class="activites">
+                <div id="activites" class="activites">
                     <div class="activites-title">
                         <h2 class="section-title">Activités à Marseille</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="activites-cards">
                         <a href="#">
@@ -284,27 +284,43 @@
                 </div>
         </main>
         <footer>
-            <div>
-                <h3>A propos</h3>
-                <a>Fonctionnement du site</a>
-                <br>
-                <a>Conditions générales de vente</a>
-                <br>
-                <a>Données et confidentialités</a>
-              </div>
-              <div>
-                <h3>Nos hébergement</h3>
-                <br>
-                <a>Charte qualité</a>
-                <br>
-                <a>Soumettre votre hotel</a>
-              </div>
-              <div>
-                <h3>Assitance</h3>
-                <br>
-                <a>Centre d'aide</a>
-                <br>
-                <a>Nous contacter</a>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <h3>À propos</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Fonctionnement du site</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions générales</a>
+                        </li>
+                        <li>
+                            <a href="#">Données et confidentialité</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Nos hébergements</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Charte qualité</a>
+                        </li>
+                        <li>
+                            <a href="#">Proposer votre hôtel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Assistance</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Centre d'aide</a>
+                        </li>
+                        <li>
+                            <a href="#">Nous contacter</a>
+                        </li>
+                    </ul>
+                </div>
               </div>
         </footer>
     </div>
