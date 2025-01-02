@@ -28,21 +28,46 @@
         </header>
             
         <main>
-            <section>
-                <div>
-                    <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-                    <p>En plein centre-ville ou en pleine nature</p>
+           
+            <section class="search">
+                <div class="search-title">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div>
-                    <form action="">
-                        <input type="search" placeholder="Marseille,France"/>
-                        <button>Rechercher</button>
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-location-dot color-icons"></i>
+                    </div>
+                    <form  class="search-form" action="" method="post">
+                        <input class="search-input" placeholder="Marseille, France" type="text" name="Rechercher">
+                        <button class="search-button">Rechercher</button>
                     </form>
-                        <h2>Filtres</h2>
-                            <button>Economique</button>
-                            <button>Familial</button>
-                            <button>Romantique</button>
-                            <button>Nos Pépites</button>
+                </div>
+                <div class="filter">
+                    <h4>Filtres</h4>
+                    <button class="filter-button">
+                        <i class="fa-solid fa-money-bill-wave filter-icon"></i>
+                        Économique
+                    </button>
+                    <button class="filter-button">
+                        <i class="fa-solid fa-person filter-icon"></i>
+                        Familial
+                    </button>
+
+                    <button class="filter-button">
+                        <i class="fa-solid fa-heart filter-icon"></i>
+                        Romantique
+                    </button>
+
+                    <button class="filter-button">
+                        <i class="fa-solid fa-fire filter-icon"></i>
+                        Nos pépites
+                    </button>
+                </div>
+                <div class="information">
+                    <div class="icon-border">
+                        <i class="fa-solid fa-info info-icon"></i>
+                    </div>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
