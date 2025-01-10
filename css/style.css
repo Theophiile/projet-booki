@@ -669,6 +669,10 @@ footer .footer-container .footer-links ul {
     .hebergements-cards {
         grid-template-columns: 1fr; 
     }
+
+    .hebergements-cards .card {
+        height: auto;
+    }
       
     .activites-cards {
         grid-template-columns: 1fr; 
