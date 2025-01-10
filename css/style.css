@@ -38,6 +38,7 @@ a {
 
 .afficher {
     font-size: 15px;
+    margin: 7px;
 }
 .card {
     background-color: white;
@@ -287,7 +288,7 @@ header nav a {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -295,6 +296,10 @@ header nav a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-title {
+    margin-bottom: 30px;
 }
 
 .hebergements-cards {
@@ -308,8 +313,7 @@ header nav a {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    margin-top: 33px;
-    height: 243px;
+    height: 207px;
   }
 
 .hebergements-cards img {
@@ -321,7 +325,7 @@ header nav a {
   }
   
 .hebergements-cards .card-content {
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -329,10 +333,12 @@ header nav a {
   } 
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin: 0;
 }
 
+.hebergements-cards .card-subtitle {
+    margin: 8px 0px;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -386,7 +392,7 @@ header nav a {
 } 
 
 .activites-title {
-    margin: 30px;
+    margin-left: 30px;
 }
 
 .activites-cards {
@@ -404,6 +410,7 @@ header nav a {
     margin-top: 20px;
     padding: 0;
 }
+
 .activites-cards .card-title{
     padding-left: 10px;
 }
@@ -504,19 +511,14 @@ footer .footer-container .footer-links ul {
     .activites-cards{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    }
-  
-    .activites-cards .card {
-        max-height: 270px;
-        max-width: 180px;
-        min-width: 120px;
+        justify-content: center;
     }
   
     .activites-cards img {
         max-height: 200px;
         min-width: 150px;
     }
+    
     .activites-cards .card-title {
         font-size: 0.8rem;
     }
@@ -670,6 +672,12 @@ footer .footer-container .footer-links ul {
       
     .activites-cards {
         grid-template-columns: 1fr; 
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .activites-title {
+        margin-bottom: 15px;
     }
 
     footer {
