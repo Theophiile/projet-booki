@@ -631,6 +631,7 @@ footer .footer-container .footer-links ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 330px;
+        margin: 0 auto;
     }
     
      .filter-button {
@@ -734,6 +735,7 @@ footer .footer-container .footer-links ul {
         object-fit: cover;
     }
   }
+
 
 
   /* Modification après soutenance
